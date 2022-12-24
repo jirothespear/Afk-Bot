@@ -7,7 +7,7 @@
 
   "server": {
     "ip": "comshopServer.aternos.me",
-    "port": 25565,
+    "port": "",
     "version": "1.17.1"
   },
 

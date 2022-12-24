@@ -1,12 +1,12 @@
 {
   "bot-account": {
-    "username": "bot",
-    "password": "comshopServer.aternos.me",
+    "username": "IdleBot",
+    "password": "",
     "type": "mojang"
   },
 
   "server": {
-    "ip": "localhost",
+    "ip": "comshopServer.aternos.me",
     "port": 25565,
     "version": "1.17.1"
   },
@@ -25,7 +25,7 @@
     },
 
     "anti-afk": {
-      "enabled": false,
+      "enabled": true,
       "sneak": false
     },
 

@@ -5,16 +5,15 @@ const { GoalBlock } = require('mineflayer-pathfinder').goals;
 
 const config = require('./settings.json');
 
-const { createServer } = require('http');
+const http = require('http');
 
-const server = createServer((request, response) => {
-   response.writeHead(200, { 'Content-Type': 'text/html'});
-   response.write('<h1>Hello Bot!</h1>');
-   return response.end();
+const requestListener = function (req, res) {
+  res.writeHead(200);
+  res.end('Hello, World!');
+}
 
-});
-
-server.listen(8080)
+const server = http.createServer(requestListener);
+server.listen(8080);
               
 function createBot() {
    const bot = mineflayer.createBot({

@@ -13,4 +13,15 @@
     "mineflayer": "^4.3.0",
     "mineflayer-pathfinder": "^2.1.1"
   }
+  
+  "scripts": {
+    
+  "prebuild": "npm install express",
+  "build": "",
+  "postbuid": "",
+  "test": ""
+  
+  
+  }
+
 }

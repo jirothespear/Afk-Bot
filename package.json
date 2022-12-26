@@ -1,15 +1,5 @@
-{
-  "name": "afk-bot",
-  "version": "1.2.1",
-  "description": "Afk bot for minecraft servers.",
-  "main": "bot.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "urFate",
-  "license": "MIT",
-  "dependencies": {
-    "mineflayer": "^4.5.1",
-    "mineflayer-pathfinder": "^2.4.0"
-  }
-}
+npm init -y
+
+npm install express
+
+npm install @type/express --save-dev

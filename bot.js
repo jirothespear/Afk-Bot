@@ -4,15 +4,19 @@ const pathfinder = require('mineflayer-pathfinder').pathfinder;
 const { GoalBlock } = require('mineflayer-pathfinder').goals;
 
 const config = require('./settings.json');
+const express = require('express');
+require('http').createServer((req,res) => res.end('Alive!')).listen(8080);
 
-var http = require('http');
+const app = express();
 
-//create a server object:
-http.createServer(function (req, res) {
-  res.write('Hello World!'); //write a response to the client
-  res.end(); //end the response
-}).listen(8080); //the server object listens on port 8080
-              
+app.get('/', (req, res) => {
+  res.send('Bot Is Ready')
+});
+
+app.listen(3000, () => {
+  console.log('server started');
+});
+
 function createBot() {
    const bot = mineflayer.createBot({
       username: config['bot-account']['username'],
@@ -51,7 +55,7 @@ function createBot() {
             var delay = config.utils['chat-messages']['repeat-delay'];
             let i = 0;
 
-            setInterval(() => {
+            let msg_timer = setInterval(() => {
                bot.chat(`${messages[i]}`);
 
                if (i + 1 == messages.length) {

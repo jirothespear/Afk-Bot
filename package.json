@@ -17,7 +17,7 @@
   "scripts": {
     
   "prebuild": "npm install express",
-  "build": "",
+  "build": "npm install express",
   "postbuid": "",
   "test": ""
   

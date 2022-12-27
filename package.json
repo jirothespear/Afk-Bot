@@ -17,7 +17,7 @@
   
   
   "scripts": {
-  "prebuild": "npm install express",
+  "prebuild": "npm install",
   "build" : "start",
   "start": "node ."
   

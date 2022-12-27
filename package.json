@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
      "prebuild": "npm install",
-     "build" : "npm run",
+     "build" : "[my-framework] build --output public",
      "start": "start"
   },
   

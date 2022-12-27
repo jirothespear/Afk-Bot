@@ -13,9 +13,7 @@ app.get('/', (req, res) => {
   res.send('Bot Is Ready')
 });
 
-app.listen(3000, () => {
-  console.log('server started');
-});
+
 
 function createBot() {
    const bot = mineflayer.createBot({
@@ -125,5 +123,9 @@ function createBot() {
       console.log(`\x1b[31m[ERROR] ${err.message}`, '\x1b[0m')
    );
 }
+
+app.listen(3000, () => {
+  console.log('server started');
+});
 
 createBot();
